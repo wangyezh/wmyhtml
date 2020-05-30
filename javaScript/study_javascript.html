@@ -47,13 +47,14 @@
             var s = 0;
             var i = start;
             while (i <= end) {
-                i + (i % 2 == 1)
+                if (i % 2 == 1){
                     s = s + i;
                 }
                 i++;
             }
             document.writeln("<br>" + s);
         }(1, 100);
+        
         var for_in = function (arr) {
             for (var each in arr) {
                 document.writeln('<br>');
